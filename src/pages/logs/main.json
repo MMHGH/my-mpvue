@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "查看启动日志"
+  "usingComponents": {
+    "van-button": "/static/vant/button/index",
+    "van-uploader": "/static/vant/uploader/index"
+  },
+  "navigationBarTitleText": "图片预览"
 }

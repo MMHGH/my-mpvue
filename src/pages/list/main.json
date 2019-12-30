@@ -1,0 +1,17 @@
+{
+  "usingComponents": {
+    "van-button": "/static/vant/button/index",
+    "van-cell": "/static/vant/cell/index",
+    "van-cell-group": "/static/vant/cell-group/index",
+    "van-tab": "/static/vant/tab/index",
+    "van-tabs": "/static/vant/tabs/index",
+    "van-loading": "/static/vant/loading/index",
+    "van-grid": "/static/vant/grid/index",
+    "van-grid-item": "/static/vant/grid-item/index"
+  },
+  "navigationBarTitleText": "电影列表",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle":"dark"   
+}
+
+

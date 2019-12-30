@@ -1,6 +1,26 @@
 <script>
 export default {
+  onLoad(){
+  },
+  methods: {
+    getInfo(){
+        var _this=this;
+        wx.getSystemInfo({
+          success:function(res){
+            console.log('当前设备nav高度',res.statusBarHeight)
+            // _this.globalData.statusBarHeight = res.statusBarHeight || 20;
+            wx.setStorageSync('statusBarHeight', res.statusBarHeight);
+          },
+          fail:function(res){
+          },
+          complete:function(res){
+          }
+      })
+    }
+  },
   created () {
+    this.getInfo();
+    console.log(this.$mp)
     // 调用API从本地缓存中获取数据
     /*
      * 平台 api 差异的处理方式:  api 方法统一挂载到 mpvue 名称空间, 平台判断通过 mpvuePlatform 特征字符串
@@ -28,6 +48,7 @@ export default {
 </script>
 
 <style>
+@import "../static/fonts/iconfont.css";
 .container {
   height: 100%;
   display: flex;

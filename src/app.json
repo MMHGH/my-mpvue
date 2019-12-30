@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/index/main",
+    "pages/loading/main",
     "pages/logs/main",
-    "pages/counter/main"
+    "pages/list/main",
+    "pages/index/main",
+    "pages/author/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -40,5 +42,10 @@
       "activeIcon": "static/tabs/orders-active.png"
     }],
     "position": "bottom"
-  }
+  },
+  "permission": {
+      "scope.userLocation": {
+        "desc": "备注说明信息（可有可无）"
+      }
+    }
 }
